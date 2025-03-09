@@ -1,0 +1,105 @@
+
+
+.container {
+    display: flex; /* Activa Flexbox */
+    flex-direction: column; /* Alineación en fila */
+    align-items: center; /* Alineación vertical */
+    padding: 20px;
+}
+
+.item {
+    width: 100%;
+    margin: 10px;
+    flex: 1; /* Los elementos ocupan el mismo espacio */
+}
+
+img {
+    border-radius: 8px;
+    object-fit: cover;
+    width: 100%;
+    height: 229px;
+}
+
+p {
+    margin: 0%;
+    padding: 0%;
+}
+
+.title-event{
+    color: #371556;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0%;
+    padding: 0%;
+}
+
+.cont-dates{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cont-lineProgress {
+    display:flex;
+    flex-direction: row;
+}
+
+.line {
+    background-color: #D9D9D9;
+    width: 100%;
+    height: 4px;
+}
+
+.progress {
+    background-color: #783BB5;
+    width: 30%;
+    height: 4px;
+}
+
+.cont-progress {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.progress-label {
+    text-align: center;
+}
+
+.text-msj {
+    font-size: 14px;
+    font-weight: bold;
+    color: #5F318A;
+}
+
+.btn {
+    display: inline-block; /* Se comporta como botón */
+    width: 100%;
+    color: #FFFFFF;
+    background-color: #783BB5;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    line-height: 28px; /* Centra el texto verticalmente */
+    transition: background-color 0.3s ease; /* Animación suave */
+}
+
+.cont-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.title-info {
+    padding: 0%;
+    margin: 0%;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.text-info {
+    font-size: 12px;
+    font-weight: lighter;
+}

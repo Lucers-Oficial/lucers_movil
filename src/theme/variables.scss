@@ -1,2 +1,48 @@
 // For information on how to create your own theme, please see:
 // http://ionicframework.com/docs/theming/
+body {
+    font-size: 12px;
+    background-color: #FFFFFF;
+    color: black;
+}
+
+/* Habilita el scroll solo cuando sea necesario */
+body {
+    overflow-y: auto; /* Aparece solo cuando sea necesario */
+    scrollbar-gutter: stable; /* Evita que el contenido se mueva cuando aparece el scrollbar */
+}
+
+/* Scroll fluido en PC y móviles */
+html {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch; /* Mejora el scroll en iOS y Android */
+}
+
+/* Estilos del scrollbar en navegadores basados en WebKit (Chrome, Edge, Android) */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Fondo del scrollbar */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 8px;
+}
+
+/* Barra deslizante del scrollbar */
+::-webkit-scrollbar-thumb {
+    background: #783BB5;
+    border-radius: 8px;
+}
+
+/* Cambio de color cuando el usuario pasa el cursor */
+::-webkit-scrollbar-thumb:hover {
+    background: #5A2A8A;
+}
+
+/* Firefox: Estilo para que el scrollbar solo aparezca cuando sea necesario */
+html {
+    scrollbar-width: thin; /* Hace que el scrollbar sea delgado */
+    scrollbar-color: #783BB5 #f1f1f1; /* Color del scrollbar y del track */
+}
+

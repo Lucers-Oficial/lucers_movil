@@ -1,16 +1,8 @@
-
-
-.container {
-    display: flex; /* Activa Flexbox */
-    flex-direction: column; /* Alineación en fila */
-    align-items: center; /* Alineación vertical */
-    padding: 20px;
-}
-
-.item {
-    width: 100%;
-    margin: 10px;
-    flex: 1; /* Los elementos ocupan el mismo espacio */
+.img-angle-left{
+    width: 10px;
+    height: 30px;
+    padding: 0%;
+    margin: 0%;
 }
 
 img {

@@ -1,26 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8" />
-  <title>Ionic App</title>
-
-  <base href="/" />
-
-  <meta name="color-scheme" content="light dark" />
-  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <meta name="format-detection" content="telephone=no" />
-  <meta name="msapplication-tap-highlight" content="no" />
-
-  <link rel="icon" type="image/png" href="assets/icon/favicon.png" />
-
-  <!-- add to homescreen for ios -->
-  <meta name="mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucers Movil</title>
+    <link rel="stylesheet" href="global.scss">
 </head>
-
 <body>
-  <app-root></app-root>
-</body>
+  <div class="main-screen">
+      <header class="header">
+        <h1 class="welcome-message">Bienvenido Invitado</h1>
+        <div class="user-icon"><img src="assets/Img/Usuario.png" alt="User Icon"></div>
+      </header>
+      <section class="search-section">
+        <div class="search-bar">
+          <input type="text" class="search-input" placeholder="Buscar en Lucers Movil..." />
+        </div>
+      </section>
+      <section class="main-sections">
+        <a href="app/tienda/tienda.page.html" class="section-item">
+          <div class="section-icon">
+            <img src="assets/Img/Shop3D.png" alt="Shop Icon" class="icon-img" />
+          </div>
+          <p class="section-label">Tienda Lucers</p>
+        </a>
+        <div class="section-item">
+          <div class="section-icon">
+            <img src="assets/Img/Psico3D.png" alt="Psychology Icon" class="icon-img" />
+          </div>
+          <p class="section-label">Psicologia</p>
+        </div>
+        <div class="section-item">
+          <div class="section-icon">
+            <img src="assets/Img/Donaciones3D.png" alt="Donations Icon" class="icon-img" />
+          </div>
+          <p class="section-label">Donaciones</p>
+        </div>
+        <div class="section-item">
+          <div class="section-icon">
+            <img src="assets/Img/Carro3D.png" alt="Cart Icon" class="icon-img" />
+          </div>
+          <p class="section-label">Carrito</p>
+        </div>
+      </section>
 
+      <div class="divider-line"></div>
+      <section class="subscription-section">
+        <div class="subscription-card">
+          <div class="subscription-icon">
+            <img src="assets/Img/Preem3D.png" alt="Subscription Icon" class="icon-img" />
+          </div>
+          <div class="subscription-text">
+            <h2 class="subscription-title">Lucers Premium</h2>
+            <p class="subscription-description">Suscribete a Lucers Premiun y obten envios gratis en tus productos</p>
+          </div>
+          <img src="assets/Img/Arrow.png" alt="Subscription Arrow" class="subscription-arrow-img" />
+        </div>
+      </section>
+      <section class="banner-section">
+        <img src="assets/Img/Banner.png" alt="Banner Image" class="banner-image" />
+      </section>
+      <section class="favorite-products-section">
+        <div class="section-header">
+        <h2 class="section-title">Productos Favoritos</h2>
+        <a href="#" class="view-all-link">ver todos</a>
+        </div>
+      </section>
+      <div class="divider-line"></div>
+      <section class="products-list">
+
+      </section>
+      <template id="card_template">
+        <div class="product-card">
+            <div class="product-image">
+                <img src="assets/Img/Shirt.png" alt="Product Image" class="card-img" />
+                <div class="like-icon">
+                    <img src="assets/Img/HeartIco.png" alt="Like Icon" class="heart-icon-img"/>
+                </div>
+            </div>
+            <div class="product-info">
+                <h3 class="product-name">Playera LC linea original 100% algodon</h3>
+                <p class="product-price">$329.00 MXN</p>
+                <div class="rating-info">
+                    <img src="assets/Img/Star.png" alt="Rating Star">
+                    <p class="rating-text">4.8 - 17 opiniones</p>
+                </div>
+            </div>
+        </div>
+      </template>
+      <script>
+        const cardTemplate = document.querySelector('#card_template');
+        const productsList = document.querySelector('.products-list');
+
+        const createCard=()=>{
+            const card = cardTemplate.content.cloneNode(true);
+            productsList.appendChild(card);
+        }
+
+        for(let i=0; i<4; i++){
+            createCard()
+        }
+      </script>
+      <footer class="bottom-navigation">
+        <nav class="bottom-nav">
+          <div class="nav-item active">
+            <img src="assets/Img/CurrentTab.png" alt="Like Icon"/>
+            <p class="nav-label">Inicio</p>
+          </div>
+          <div class="nav-item">
+            <img src="assets/Img/OtherTab.png" alt="Like Icon"/>
+            <p class="nav-label">Favoritos</p>
+          </div>
+          <div class="nav-item">
+            <img src="assets/Img/OtherTab.png" alt="Like Icon"/>
+            <p class="nav-label">Suscripciones</p>
+          </div>
+          <div class="nav-item">
+            <img src="assets/Img/OtherTab.png" alt="Like Icon"/>
+            <p class="nav-label">Configuracion</p>
+          </div>
+        </nav>
+      </footer>
+    </div>
+</body>
 </html>

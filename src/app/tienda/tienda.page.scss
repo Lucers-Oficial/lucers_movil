@@ -1,0 +1,121 @@
+.item-nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+}
+
+.img-angle-left {
+    width: 10px; /* Ancho fijo */
+    height: 30px; /* Mantiene la proporción */
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
+}
+
+.icon-user{
+    width: 28px;
+    height: 28px;
+}
+
+h2 {
+    background: linear-gradient(90deg, #d6afff 0%, #472d61 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    width: 100%;
+    text-align: left;
+    padding: 0%;
+    margin: 0%;
+    text-align: center;
+}
+
+p{
+    padding: 0%;
+    margin: 0%;
+    gap: auto;
+}
+
+.input-serch {
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    height: 24px;
+    padding: 15px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.item-categorias {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 5px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+.item-categorias::-webkit-scrollbar {
+    display: none;
+}
+
+.categoria {
+    background-color: #FFFFFF;
+    color: #8C8C8C;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.item-articulos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); /* Columnas automáticas */
+    gap: 10px; /* Espaciado entre elementos */
+    width: 100%;
+    justify-content: center; /* Centrar los elementos si hay espacio */
+}
+
+.articulo {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #8C8C8C;
+    border-radius: 8px;
+    width: 156px;
+    height: 235px;
+    text-align: left;
+    padding: 8px;
+    gap: 5px;
+}
+
+.cont-imgLike{
+    position: relative;
+    display: inline-block;
+}
+
+.icon-like {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 24px;
+    height: 21px;
+}
+
+.img-articulo {
+    display: block;
+    text-align: center;
+    width: 140px; /* Ajusta según necesidad */
+    height: 140px;
+}
+
+.text-precio {
+    color: #783BB5;
+    font-weight: bold;
+}
+
+.text-calificacion{
+    font-weight: bold;
+}

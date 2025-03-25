@@ -1,0 +1,27 @@
+// For information on how to create your own theme, please see:
+// http://ionicframework.com/docs/theming/
+body {
+    font-size: 12px;
+    background-color: #FFFFFF;
+    color: black;
+}
+
+.container {
+    background-color: #FFFFFF;
+    display: flex; /* Activa Flexbox */
+    flex-direction: column; /* Alineación en fila */
+    align-items: center; /* Alineación vertical */
+    gap: 10px; /* Espaciado entre elementos */
+    padding: 20px;
+}
+
+.item {
+    width: 100%;
+    flex: 1; /* Los elementos ocupan el mismo espacio */
+}
+
+a {
+    color: #6DA141;
+    font-weight: 200;
+}
+

@@ -1,0 +1,318 @@
+// global.scss (or global.css if you're not using Sass)
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+// --- Base Styles (for all screen sizes) ---
+body {
+  font-family: sans-serif; /* Choose a good font */
+  padding: 0;
+  box-sizing: border-box; // very important, you should always use this.
+  min-width: 375px; // Ensure content doesn't break on 375px width
+  overflow-y: auto;
+}
+
+*, *::before, *::after{
+  box-sizing: inherit; // also very important. it makes box-sizing apply to everything.
+}
+
+.main-screen {
+  min-height: 100vh;
+  width: 100%; //takes all the width
+  max-width: 100vw; //to avoid overflow
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; // Changed to flex-start to align content to the top
+  padding: 0px; // Removed horizontal padding
+  min-height: 667px; // Ensure content fills at least 667px height
+  position: relative;
+  box-sizing: border-box;
+}
+
+
+.main-sections {
+  display: flex;
+  flex-wrap: nowrap; /* Changed to nowrap */
+  justify-content: flex-start; /* Changed to flex-start */
+  width: 100%;
+  padding: 0px 1rem; /* Added padding */
+  overflow-x: auto; /* Add horizontal scroll */
+  -webkit-overflow-scrolling: touch; /* Add smooth scroll */
+}
+
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.5rem 1rem; // Added padding
+}
+
+.welcome-message {
+  font-size: 1rem; /* Adjusted font size */
+}
+
+.user-icon img {
+  width: 30px; /* Adjusted size */
+  height: auto;
+  border-radius: 50%;
+}
+
+.search-section {
+  width: 100%;
+  padding: 0.5rem 1rem; // Added padding
+}
+
+.search-bar {
+  width: 100%;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  background-color: transparent; /* Add this line */
+}
+
+
+.section-item-wrapper {
+  width: auto; /* Changed to auto */
+  margin-bottom: 0.5rem; /* Add margin */
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0; /* Add flex-shrink */
+}
+
+.section-item {
+  /*width: 48%; Removed width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /*margin-bottom: 0.5rem; Removed margin */
+  background-color: #f2EBFC; /* Light gray background */
+  border-radius: 15px; /* Rounded corners */
+  padding: 0.3rem 0.5rem; /* Reduced padding */
+  box-sizing: border-box;
+  width: auto; /* Changed to auto */
+  max-width: 100px; /* Reduced max width */
+  min-width: 0px; /* Removed min width */
+  margin: 0 0.3rem; /* Reduced horizontal margin */
+}
+
+.section-icon {
+  width: 40px; /* Adjusted size */
+  height: 40px; /* Adjusted size */
+}
+
+.icon-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section-label {
+  text-align: center;
+  margin-top: 0.2rem; // Reduced margin
+  font-size: 0.7rem; // Adjusted font size
+}
+
+.divider-line {
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+  margin: 0.5rem 0; // Reduced margin
+}
+
+.subscription-section {
+  width: 100%;
+  padding: 0.5rem 1rem; // Added padding
+}
+
+.subscription-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #F2EBFC;
+    border-radius: 5px;
+    padding: 0.3rem 0.5rem; // Reduced padding
+}
+
+.subscription-icon{
+    width: 30px; // Adjusted size
+    height: 30px; // Adjusted size
+}
+
+.subscription-text{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem; // Adjusted font size
+}
+
+.subscription-arrow-img{
+    width: 15px; // Adjusted size
+    height: auto;
+}
+
+.banner-section {
+  width: 100%;
+  padding: 0.5rem 1rem; // Added padding
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+}
+
+.favorite-products-top{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+.section-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0; // Reduced padding
+  flex-direction: row;
+  align-items: center;
+}
+
+
+.products-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 0px 1rem; // Added padding
+}
+
+.product-card {
+  width: 48%; // Adjusted width for better spacing
+  margin-bottom: 0.5rem; // Reduced margin
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0.3rem; // Reduced padding
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); // Reduced shadow
+  min-height: 250px; /* Add this line */
+}
+
+.product-image {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 150px; /* Add this line */
+}
+
+.card-img {
+  width: 100%;
+  height: 100%; /* Change this line */
+  object-fit: cover; /* Add this line */
+  display: block;
+}
+
+.like-icon {
+    position: absolute;
+    top: 0.3rem; // Reduced position
+    right: 0.3rem; // Reduced position
+}
+
+.heart-icon-img{
+    width: 15px; // Adjusted size
+    height: auto;
+}
+
+.product-info {
+  padding: 0.2rem 0; /* Reduced padding */
+  font-size: 0.7rem; /* Reduced font size */
+  min-height: 80px;
+}
+
+
+.rating-info {
+  display: flex;
+  align-items: center;
+}
+
+.rating-info img {
+  width: 12px; // Adjusted size
+  height: 12px; // Adjusted size
+  margin-right: 0.1rem; // Reduced margin
+}
+
+.bottom-navigation {
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  background-color: white;
+  box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.1); // Reduced shadow
+  padding: 0.5rem 0px; // Reduced padding
+  box-sizing: border-box;
+}
+
+.bottom-nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem; // Adjusted font size
+}
+.nav-item img {
+    width: 20px; // Adjusted size
+}
+.nav-item.active{
+    color: blue;
+}
+
+@media (min-width: 768px) {
+  /* Example for tablets and larger screens */
+  .welcome-message{
+      font-size: 1.5rem; // Adjusted font size for larger screens
+  }
+
+  .section-item-wrapper {
+    width: auto; /* More items in a row */
+  }
+
+  .products-list{
+    justify-content: flex-start;
+  }
+
+  .product-card {
+      width: 30%; /* More items in a row */
+      background-color: white;
+  }
+
+}
+
+@media (min-width: 1024px) {
+  /* Example for desktops */
+  .main-screen{
+      padding: 0px 15vw;
+  }
+  .products-list {
+    padding: 0px 15vw; // Added padding
+  }
+}

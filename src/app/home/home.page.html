@@ -9,7 +9,7 @@
   <div class="main-screen">
       <header class="header">
         <h1 class="welcome-message">Bienvenido Invitado</h1>
-        <a class="user-icon" href="login"><img src="assets/img/Usuario.png" alt="User Icon"></a>
+        <a href="login" class="user-icon"><img src="assets/img/Usuario.png" alt="User Icon"></a>
       </header>
       <section class="search-section">
         <div class="search-bar">
@@ -25,14 +25,14 @@
               <p class="section-label">Tienda Lucers</p>
             </div>
           </a>
-          <a href="home" class="section-item-wrapper"> <!-- Added wrapper -->
+          <div class="section-item-wrapper"> <!--- Added wrapper -->
             <div class="section-item">
               <div class="section-icon">
                 <img src="assets/img/Psico3D.png" alt="Psychology Icon" class="icon-img" />
               </div>
               <p class="section-label">Psicologia</p>
             </div>
-          </a>
+          </div>
           <a href="donaciones" class="section-item-wrapper"> <!-- Added wrapper -->
             <div class="section-item">
               <div class="section-icon">
@@ -119,27 +119,25 @@
         </script>
       <footer class="bottom-navigation">
         <nav class="bottom-nav">
-          <div class="nav-item active">
+          <a href="home" class="nav-item active">
             <img src="assets/img/CurrentTab.png" alt="Like Icon"/>
-            <a class="nav-label" href="home">Inicio</a>
-          </div>
-          <div class="nav-item">
+            <p class="nav-label">Inicio</p>
+          </a>
+          <a href="favoritos" class="nav-item">
             <img src="assets/img/OtherTab.png" alt="Like Icon"/>
-            <a class="nav-label" href="favoritos">Favoritos</a>
-          </div>
-          <div class="nav-item">
+            <p class="nav-label">Favoritos</p>
+          </a>
+          <a href="subscripciones" class="nav-item">
             <img src="assets/img/OtherTab.png" alt="Like Icon"/>
-            <a class="nav-label" href="suscripciones">Suscripciones</a>
-          </div>
-          <div class="nav-item">
+            <p class="nav-label">Suscripciones</p>
+          </a>
+          <a href="configuracion" class="nav-item">
             <img src="assets/img/OtherTab.png" alt="Like Icon"/>
-            <a class="nav-label" href="configuracion">Configuracion</a>
-          </div>
+            <p class="nav-label">Configuracion</p>
+          </a>
         </nav>
       </footer>
   </div>
 </body>
 </html>
-
-<a href=""></a>
 

@@ -103,3 +103,14 @@ h2 {
 a {
     all: unset;
 }
+
+.card-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  cursor: pointer; /* Optional: Change the cursor to a pointer on hover */
+}
+
+.card-content-wrapper:hover{
+  background-color: #f0f0f0;
+}
